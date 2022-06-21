@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\8_stringToInteger.dir/objects.a
+C:\Enviroments\Mingw64\bin\ar.exe qc CMakeFiles\8_stringToInteger.dir/objects.a @CMakeFiles\8_stringToInteger.dir\objects1.rsp
+C:\Enviroments\Mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\8_stringToInteger.dir/objects.a -Wl,--no-whole-archive -o 8_stringToInteger.exe -Wl,--out-implib,lib8_stringToInteger.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\8_stringToInteger.dir\linklibs.rsp

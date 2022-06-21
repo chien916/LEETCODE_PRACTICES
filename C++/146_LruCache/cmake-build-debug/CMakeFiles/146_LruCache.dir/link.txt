@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\146_LruCache.dir/objects.a
+C:\Enviroments\Mingw64\bin\ar.exe cr CMakeFiles\146_LruCache.dir/objects.a @CMakeFiles\146_LruCache.dir\objects1.rsp
+C:\Enviroments\Mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\146_LruCache.dir/objects.a -Wl,--no-whole-archive -o 146_LruCache.exe -Wl,--out-implib,lib146_LruCache.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\146_LruCache.dir\linklibs.rsp
