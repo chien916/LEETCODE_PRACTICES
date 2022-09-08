@@ -1,3 +1,0 @@
-C:/Users/Yinhao/Documents/Leetcode/7_reverseInteger/cmake-build-debug/CMakeFiles/7_reverseInteger.dir
-C:/Users/Yinhao/Documents/Leetcode/7_reverseInteger/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yinhao/Documents/Leetcode/7_reverseInteger/cmake-build-debug/CMakeFiles/rebuild_cache.dir

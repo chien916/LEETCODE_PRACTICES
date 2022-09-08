@@ -1,3 +1,0 @@
-C:/Users/Yinhao/Documents/Leetcode/5_longestPalindromicSubstring/cmake-build-debug/CMakeFiles/5_longestPalindromicSubstring.dir
-C:/Users/Yinhao/Documents/Leetcode/5_longestPalindromicSubstring/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yinhao/Documents/Leetcode/5_longestPalindromicSubstring/cmake-build-debug/CMakeFiles/rebuild_cache.dir

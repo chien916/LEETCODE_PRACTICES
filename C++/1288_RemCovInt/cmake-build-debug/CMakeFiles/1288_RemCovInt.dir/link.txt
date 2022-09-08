@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\1288_RemCovInt.dir/objects.a
-C:\Enviroments\SysGCC\bin\ar.exe cr CMakeFiles\1288_RemCovInt.dir/objects.a @CMakeFiles\1288_RemCovInt.dir\objects1.rsp
-C:\Enviroments\SysGCC\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\1288_RemCovInt.dir/objects.a -Wl,--no-whole-archive  -o 1288_RemCovInt.exe -Wl,--out-implib,lib1288_RemCovInt.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\1288_RemCovInt.dir\linklibs.rsp

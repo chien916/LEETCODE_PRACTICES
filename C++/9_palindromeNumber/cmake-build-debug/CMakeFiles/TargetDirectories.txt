@@ -1,3 +1,0 @@
-C:/Users/Yinhao/Documents/Leetcode/9_palindromeNumber/cmake-build-debug/CMakeFiles/9_palindromeNumber.dir
-C:/Users/Yinhao/Documents/Leetcode/9_palindromeNumber/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yinhao/Documents/Leetcode/9_palindromeNumber/cmake-build-debug/CMakeFiles/rebuild_cache.dir

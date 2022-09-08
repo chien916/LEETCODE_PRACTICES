@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\7_reverseInteger.dir/objects.a
-C:\Development\MinGW\bin\ar.exe cr CMakeFiles\7_reverseInteger.dir/objects.a @CMakeFiles\7_reverseInteger.dir\objects1.rsp
-C:\Development\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\7_reverseInteger.dir/objects.a -Wl,--no-whole-archive  -o 7_reverseInteger.exe -Wl,--out-implib,lib7_reverseInteger.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\7_reverseInteger.dir\linklibs.rsp
