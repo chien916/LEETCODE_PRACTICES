@@ -51,4 +51,3 @@ var lastRemaining = function (n) {
      */
 };
 
-lastRemaining(6)

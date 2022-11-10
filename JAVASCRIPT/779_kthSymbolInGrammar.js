@@ -34,4 +34,3 @@ var kthGrammar = function (n, k) {
      */
 };
 
-kthGrammar(1,1);

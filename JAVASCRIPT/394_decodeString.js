@@ -28,4 +28,3 @@ var decodeString = function (s) {
     return currentString;
 };
 
-decodeString("3[a]2[bc]")
