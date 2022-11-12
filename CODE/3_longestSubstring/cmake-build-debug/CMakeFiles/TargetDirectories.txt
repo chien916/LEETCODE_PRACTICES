@@ -1,3 +1,0 @@
-C:/Users/Yinhao/Documents/Leetcode/3_longestSubstring/cmake-build-debug/CMakeFiles/3_longestSubstring.dir
-C:/Users/Yinhao/Documents/Leetcode/3_longestSubstring/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yinhao/Documents/Leetcode/3_longestSubstring/cmake-build-debug/CMakeFiles/rebuild_cache.dir

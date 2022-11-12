@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2019.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\876_middleOfTheLinkedList.dir/objects.a
-C:\Development\MinGW\bin\ar.exe cr CMakeFiles\876_middleOfTheLinkedList.dir/objects.a @CMakeFiles\876_middleOfTheLinkedList.dir\objects1.rsp
-C:\Development\MinGW\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\876_middleOfTheLinkedList.dir/objects.a -Wl,--no-whole-archive  -o 876_middleOfTheLinkedList.exe -Wl,--out-implib,lib876_middleOfTheLinkedList.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\876_middleOfTheLinkedList.dir\linklibs.rsp

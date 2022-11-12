@@ -1,3 +1,0 @@
-C:/Users/Yinhao/Documents/Leetcode/6_zigZagConversion/cmake-build-debug/CMakeFiles/6_zigZagConversion.dir
-C:/Users/Yinhao/Documents/Leetcode/6_zigZagConversion/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Yinhao/Documents/Leetcode/6_zigZagConversion/cmake-build-debug/CMakeFiles/rebuild_cache.dir
