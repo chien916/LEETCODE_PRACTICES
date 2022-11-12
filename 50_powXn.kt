@@ -20,10 +20,14 @@ class Solution {
         else if (n == 1)
             x;
         else if (n % 2 == 0) //even
-            myPow(myPow(x, n/2),2);
+            myPow(myPow(x, n / 2), 2);
         else if (n < 0)
             myPow(myPow(x, n / 2), 2) * x;
         else
             myPow(myPow(x, n / 2), 2) / x;
     }
+}
+
+fun main() {
+    print("test");
 }
