@@ -1,4 +1,4 @@
-const {TreeNode} = require("./_definitions.js")
+const {TreeNode} = require("./_util.js")
 /*
 * @param {TreeNode} root
 * @return {string[]}
