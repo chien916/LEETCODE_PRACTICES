@@ -18,23 +18,25 @@ var deleteDuplicates = function (head) {
     let firs_L = head;//to be returned
     let curr_L = head;
     let prev_L = null;
-    while (curr_L.next) {
+    while (curr_L &&curr_L.next) {
         if(curr_L.val === curr_L.next.val){
-            while (curr_L.next && curr_L.val === curr_L.next) {
+            while (curr_L.next && curr_L.val === curr_L.next.val) {
                 curr_L = curr_L.next;
             }
-            // console.log(curr_L);
+            // console.log(curr_L)
             if (!prev_L) {
                 firs_L = curr_L;
             } else {
                 prev_L.next = curr_L;
             }
-            prev_L = curr_L;
+
         }
+        prev_L = curr_L;
         curr_L = curr_L.next;
     }
     return firs_L;
 };
 
-let input = asList([1,1,2]);
+let input = asList([1,1,2,3,3,3]);
 let result = deleteDuplicates(input);
+console.log(result);
