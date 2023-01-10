@@ -10,6 +10,7 @@ var maxSubArray = function (nums) {
         if (prevMax_n > everMax_n) everMax_n = prevMax_n;
     }
     return everMax_n;
+    
 };
 
 maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
