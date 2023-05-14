@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var maxSubarraySumCircular = function(nums) {
+var maxSubarraySumCircular = function (nums) {
     /**
      * 思路:环形子数组之和:
      * Kadane's Algorithm算出最大子数组和最小子数组
@@ -12,6 +12,17 @@ var maxSubarraySumCircular = function(nums) {
      * 
      * 边界条件:如果所有元素都是负数,那么最小子数组将是所有元素,做差后代表最终子数组为空,不符合题目条件
      */
+    let prevMinSum_n = Number.MAX_SAFE_INTEGER;
+    let globalMinSum_n = Number.MAX_SAFE_INTEGER;
+    let prevMaxSum_n = Number.MIN_SAFE_INTEGER;
+    let globalMaxSum_n = Number.MIN_SAFE_INTEGER;
+    let sum_n = 0;
+    for (let it_n of nums) {
+        globalMinSum_n = Math.min(globalMinSum_n, prevMinSum_n = Math.min(prevMinSum_n + it_n, it_n));
+        globalMaxSum_n = Math.max(globalMaxSum_n, prevMaxSum_n = Math.max(prevMaxSum_n + it_n, it_n));
+        sum_n += it_n;
+    }
+    return Math.max(globalMaxSum_n, globalMaxSum_n < 0 ? Number.MIN_SAFE_INTEGER : sum_n - globalMinSum_n);
 };
 
 
