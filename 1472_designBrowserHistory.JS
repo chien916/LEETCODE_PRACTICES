@@ -17,7 +17,8 @@ BrowserHistory.prototype.visit = function (url) {
     }
     //adds the current site to history
     this.history_A.push(url);
-    console.log(this.history_A + " " +  this.currInd_n );
+    this.currInd_n = NaN;
+    //console.log(this.history_A + " " +  this.currInd_n );
     return null;
 };
 
@@ -27,12 +28,12 @@ BrowserHistory.prototype.visit = function (url) {
  */
 BrowserHistory.prototype.back = function (steps) {
     let shiftedInd_n
-        = (isNaN(this.currInd_n) ? this.history_A.length : this.currInd_n)
+        = (isNaN(this.currInd_n) ? this.history_A.length-1 : this.currInd_n)//!1
         - steps;
     //I'm assuming there's always at least 1 site in history (homepage probably?)
     if (shiftedInd_n < 0) shiftedInd_n = 0;
     this.currInd_n = shiftedInd_n;
-    console.log(this.history_A + " " +  this.currInd_n );
+    //console.log(this.history_A + " " +  this.currInd_n );
     return this.history_A[shiftedInd_n];
 };
 
@@ -48,12 +49,12 @@ BrowserHistory.prototype.forward = function (steps) {
     let shiftedInd_n = this.currInd_n + steps;
     if (shiftedInd_n > this.history_A.length - 1) shiftedInd_n = this.history_A.length - 1;
     this.currInd_n = shiftedInd_n;
-    console.log(this.history_A + " " +  this.currInd_n );
+    //console.log(this.history_A + " " +  this.currInd_n );
     return this.history_A[shiftedInd_n];
 };
 
 
-var obj = new BrowserHistory(homepage)
-obj.visit(url)
-var param_2 = obj.back(steps)
-var param_3 = obj.forward(steps)
+// var obj = new BrowserHistory(homepage)
+// obj.visit(url)
+// var param_2 = obj.back(steps)
+// var param_3 = obj.forward(steps)
