@@ -4,12 +4,14 @@
  * @return {number[]}
  */
 var intersection = function (nums1, nums2) {
-	if (nums1.length === 0 || nums2.length === 0) return [];
-	let sortedNums1_na = nums1.sort();
-	let sortedNums2_na = nums2.sort();
-	let currNums1Ind_n = 0;
-	let currNums2Ind_n = 0;
-	while (currNums1Ind_n < sortedNums1_na.length && currNums2Ind_n < sortedNums2_na.length) {
-
+	let hmap_A = Array(1000).fill(0);
+	for (let it_n of nums1)
+		hmap_A[it_n] = 1;
+	for (let it_n of nums2)
+		if (hmap_A[it_n] === 1) hmap_A[it_n] = 2;
+	let _ret_A = [];
+	for (let i_n = 0; i_n < 1000; ++i_n) {
+		if (hmap_A[i_n] === 2) _ret_A.push(i_n);
 	}
+	return _ret_A;
 };
