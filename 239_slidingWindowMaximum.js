@@ -28,7 +28,6 @@ var maxSlidingWindow = function (nums, k) {
     }
 
     return _ret_A;
-
 };
 
 const {
