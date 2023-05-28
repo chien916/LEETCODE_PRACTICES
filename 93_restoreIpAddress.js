@@ -4,7 +4,7 @@
  */
 var restoreIpAddresses = function (s) {
 	let backTrack_f = (currCand_a, currInd_n, poteCand_s, passCand_sa) => {
-		if (currCand_a.length > 4)
+		if (currCand_a.len5gth > 4)
 			return;//candidate array too big
 		if (currCand_a.length > 0) {
 			let currCandElem_s = currCand_a[currCand_a.length - 1];
@@ -29,4 +29,3 @@ var restoreIpAddresses = function (s) {
 	return passCand_sa;
 };
 console.log(restoreIpAddresses("101023"));
-// console.log(restoreIpAddresses("25525511135"));

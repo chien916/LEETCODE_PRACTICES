@@ -22,7 +22,7 @@ var distinctNames = function (ideas) {
         }
     }
 
-    return possb_n;
+    return possb_n; 
 };
 
 console.log(distinctNames(["coffee", "donuts", "time", "toffee"]));
