@@ -8,6 +8,9 @@
 // let ListNode = util.ListNode;
 // let formLinkedList = util.formLinkedList;
 
+// //优先队列结构定义
+// let util = require("./_util");
+// let PriorityQueue = util.PriorityQueue;
 
 function formLinkedList(arr_n) {
 	if (arr_n.length === 0) return null;
@@ -51,8 +54,14 @@ function TreeNode(val, left, right) {
 	this.right = (right === undefined ? null : right);
 }
 
+const {
+	PriorityQueue,
+	MinPriorityQueue,
+	MaxPriorityQueue
+} = require('@datastructures-js/priority-queue');
 
 exports.ListNode = ListNode;
 exports.TreeNode = TreeNode;
 exports.formLinkedList = formLinkedList;
 exports.formBinaryTree = formBinaryTree;
+exports.PriorityQueue = PriorityQueue;
