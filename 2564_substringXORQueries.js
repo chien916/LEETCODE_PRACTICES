@@ -10,8 +10,8 @@ var substringXorQueries = function (s, queries) {
     let retA = []
     for (let [firN, secN] of queries) {
         //first XOR second = val
-        let valN = ((firN ^ secN) >>> 0).toString();
+        let valN = (firN ^ secN) >>> 0;
         let digN = Math.floor(Math.log2(valN)) + 1;
-        
+        let _curr
     }
 };

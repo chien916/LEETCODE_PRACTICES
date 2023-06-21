@@ -17,6 +17,11 @@
 // let formDesignExpr = util.formDesignExpr;
 // let evalDesignExpr = util.evalDesignExpr;
 
+// //LODASH结构定义
+// let util = require("./_util");
+// let _ = util.Lodash;
+// let evalDesignExpr = util.evalDesignExpr;
+
 function formDesignExpr(funcNames_a, args_a, instanceName_s) {
 	let _init_s = (`new ${funcNames_a[0]}(${args_a[0].join(",")});`);
 	let _exp_a = [];
@@ -86,6 +91,9 @@ const {
 	MaxPriorityQueue
 } = require('@datastructures-js/priority-queue');
 
+const LoDash = require('lodash/core');
+
+exports.LoDash = LoDash;
 exports.ListNode = ListNode;
 exports.TreeNode = TreeNode;
 exports.formLinkedList = formLinkedList;
@@ -93,3 +101,4 @@ exports.formBinaryTree = formBinaryTree;
 exports.formDesignExpr = formDesignExpr;
 exports.evalDesignExpr = evalDesignExpr;
 exports.PriorityQueue = PriorityQueue;
+
