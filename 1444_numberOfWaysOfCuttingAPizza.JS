@@ -22,7 +22,7 @@ var ways = function (pizza_sA, k_n) {
      * 利用lc304题Range Sum思想判断某个二维区间有没有pizza
      */
     let hasPizzaAt_fb = (r_n, c_n) => pizza_sA[r_n].charCodeAt(c_n) === "A".charCodeAt(0);
-    let rangeSumTabu_nAA = Array(pizza_sA.length).fill().map(x
+    let rangeSumTabu_nAA = Array(pizza_sA.length).fill().map(
         () => Array(pizza_sA[0].length).fill().map(() => NaN)
     );
 
