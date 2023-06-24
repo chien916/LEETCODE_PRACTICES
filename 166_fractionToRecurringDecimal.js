@@ -17,7 +17,6 @@ var fractionToDecimal = function (n, d) {
     while (n > 0 && ans.length < 1e4 + 1) {
         let _dig = parseInt(Math.floor(n / d))
         if (M.has(_dig)) {
-            if(M.size === 1 &&M.has(0)) 
             ans = ans.slice(0, M.get(_dig)) + "(" + ans.slice(M.get(_dig)) + ")"
             return ans
         }
