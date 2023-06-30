@@ -2,6 +2,7 @@
 // let util = require("./_util");
 // let TreeNode = util.TreeNode;
 // let formBinaryTree = util.formBinaryTree;
+// let printBinaryTree = util.printBinaryTree;
 
 // //链表类题型结构定义
 // let util = require("./_util");
@@ -85,6 +86,37 @@ function TreeNode(val, left, right) {
 	this.right = (right === undefined ? null : right);
 }
 
+
+function printBinaryTree(R) {
+	//get height of tree (1-beginning)
+	let dfs = (_T, _h = 1) => {
+		return Math.max(
+			((_T.left) ? dfs(_T.left, _h + 1) : 0),
+			((_T.right) ? dfs(_T.right, _h + 1) : 0),
+			_h
+		);
+	}
+	let h = R ? dfs(R) : 0;
+	let w = 2 ** h - 1;
+	let Ans = Array(h).fill().map(() => Array(w).fill().map(() => "   "));
+	//0<=i<h 0<=j<w
+	let dfs2 = (_T, i, j_lo, j_hi) => {//j_lo and j_hi is inclusive
+		let j_mid = j_lo + ((j_hi - j_lo) >>> 1);
+		Ans[i][j_mid] = _T.val.toString().padEnd(3,"_");
+		if (_T.left) dfs2(_T.left, i + 1, j_lo, j_mid - 1);
+		if (_T.right) dfs2(_T.right, i + 1, j_mid + 1, j_hi);
+	}
+	if (R) dfs2(R, 0, 0, w - 1);
+	let ToPrint = "";
+	for (let Row of Ans) {
+		for (let ele of Row) {
+			ToPrint += ele;
+		}
+		ToPrint += "\n";
+	}
+	console.log(ToPrint);
+};
+
 const {
 	PriorityQueue,
 	MinPriorityQueue,
@@ -100,5 +132,6 @@ exports.formLinkedList = formLinkedList;
 exports.formBinaryTree = formBinaryTree;
 exports.formDesignExpr = formDesignExpr;
 exports.evalDesignExpr = evalDesignExpr;
+exports.printBinaryTree = printBinaryTree;
 exports.PriorityQueue = PriorityQueue;
 
