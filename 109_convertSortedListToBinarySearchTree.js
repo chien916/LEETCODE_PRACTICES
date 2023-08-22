@@ -19,6 +19,25 @@
  */
 var sortedListToBST = function (H) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    if (!H) return null;
+    let V_l = [];
+    for (let N = H; N; N = N.next) {
+        V_l.push(N.val);
+    }
+    let dfs = (V) => {
+        let i_m = ((V.length - 1) >>> 1);
+        let N = new TreeNode(V[i_m], null, null);
+        //console.log(V, i_m,V.slice(0, i_m),V.slice(i_m + 1));
+        if (i_m - 1 > -1) N.left = dfs(V.slice(0, i_m));
+        if (i_m + 1 < V.length) N.right = dfs(V.slice(i_m + 1));
+        return N;
+    }
+    let N_a = dfs(V_l);
+    return N_a;
+=======
+>>>>>>> 92e19e49d1ac0ff57194eb87bd36b120ea368cd4
     helper
     H = new ListNode(-Infinity, H);
     for (let N = H; N; N = N.next) {
@@ -48,6 +67,7 @@ var sortedListToBST = function (H) {
     M_l = M_l.next;
     for(;M_l.)
 
+<<<<<<< HEAD
 =======
     if (!H) return null;
     let V_l = [];
@@ -65,4 +85,7 @@ var sortedListToBST = function (H) {
     let N_a = dfs(V_l);
     return N_a;
 >>>>>>> 4821a6ca7a487a5166fa29a0097731515d89df07
+=======
+>>>>>>> 42dce174ba7ade314b0a20e4a513561fcd069c37
+>>>>>>> 92e19e49d1ac0ff57194eb87bd36b120ea368cd4
 };
